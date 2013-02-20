@@ -14,7 +14,8 @@ try {
 var pageTracker = _gat._getTracker("UA-6885542-1");
 pageTracker._trackPageview();
 } catch(err) {}
-//alert(document.URL);
+
+if (window.location.pathname == "index.php") { window.location = "/index.php"; }
 </script>
     <!-- End: Google Analytics -->
 <!-- verify-v1: Google Sitemaps -->
