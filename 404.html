@@ -6,9 +6,13 @@
 
 <script type="text/javascript">
 var sPath = window.location.pathname;
-//var sPage = sPath.substring(sPath.lastIndexOf('\\') + 1);
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-//alert(sPage);
+
+function redirect_help(fromPage, toPage){
+    window.location.href='http://www.gaacbrokerage.com/'+toPage;
+}
+
+redirect_help(nothing,index.html);
 
 if (sPage == "about.php"){
     window.location.href='http://www.gaacbrokerage.com/about.html';
@@ -16,9 +20,9 @@ if (sPage == "about.php"){
     window.location.href='http://www.gaacbrokerage.com/index.html';
 }else if (sPage == "services.php"){
     window.location.href='http://www.gaacbrokerage.com/services.html';
-}else if (sPage == "accreditation.php"){
-    window.location.href='http://www.gaacbrokerage.com/accreditation.html';
-}else if (sPage == "faq.php"){
+}else if (sPage == "accreditations.php"){
+    window.location.href='http://www.gaacbrokerage.com/accreditations.html';
+}else if (sPage == "faq.php")
     window.location.href='http://www.gaacbrokerage.com/faq.html';
 }else if (sPage == "contact.php"){
     window.location.href='http://www.gaacbrokerage.com/contact.html';
