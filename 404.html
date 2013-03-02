@@ -9,6 +9,12 @@ var sPath = window.location.pathname;
 //var sPage = sPath.substring(sPath.lastIndexOf('\\') + 1);
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 alert(sPage);
+
+if (sPage == "about.php"){
+    window.location.href='http://www.gaacbrokerage.com/about.html';
+}else if (sPage == "index.php"){
+    window.location.href='http://www.gaacbrokerage.com/index.html';
+}
 </script>
 
     <!-- Start: Google Analytics -->
